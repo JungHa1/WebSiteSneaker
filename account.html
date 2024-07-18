@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Account</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+        <link rel="icon" type="image/png" href="assets/images/nike-32.ico">
+
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar navbar-padding">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/nike.png" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="account.html">Account</a></li>
+
+                        </ul>
+                    </nav>
+                    <a href="cart.html"><i class="ti-shopping-cart" style="font-size: 44px;"></i></a>
+                    <img src="assets/images/menu.png" class="menu-icon" onClick="menutoggle()">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!------------------------------ account-page details------------------------------>
+
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 img-account">
+                        <img src="assets/images/Jordan.png" width="100%">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <form id="register-form">
+                                <h2 style="margin-bottom: 32px;">Register</h2>
+                                <label for="register-username">Username:</label>
+                                <input type="text" id="register-username" required placeholder="Username">
+
+                                <label for="register-email">Email:</label>
+                                <input type="email" id="register-email" required placeholder="Email">
+
+                                <label for="register-password">Password:</label>
+                                <input type="password" id="register-password" required placeholder="Password"> 
+
+                                <label for="register-password">Confirm password:</label>
+                                <input type="password" id="register-password" required placeholder="Confirm password">
+
+                                <button type="submit">Sign up</button>
+                                <div class="toggle-form">
+                                    <a href="#" id="toggle-link-login">Login</a>
+                                </div>
+                            </form>
+
+                            <div class="login-form">
+                                <form id="login-form">
+                                    <h2 style="margin-bottom: 32px;">Login</h2>
+                                    <label for="login-username">Username:</label>
+                                    <input type="text" id="login-username" required placeholder="Username">
+
+                                    <label for="login-password">Password:</label>
+                                    <input type="password" id="login-password" required placeholder="Password">
+
+                                    <button type="submit">Sign in</button>
+                                </form>
+                                <div class="toggle-register">
+                                    <p>No account? <a href="#" id="toggle-link">Create account</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="end-account">
+            <img src="assets/images/hanging-nike.jpg" alt="">
+        </div>
+
+        <!----------------------------------footer------------------------------------->
+        <div class="footer">
+            <div class="container">
+
+                <div class="row">
+                    <div class="footer-col-2">
+                        <img src="assets/images/logo-nike-white.png">
+                    </div>
+                    <div class="footer-col-1">
+                        <h3>Location</h3>
+                        <p><i class="ti-location-pin"></i> 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh,
+                            Việt Nam
+                        </p>
+                        <div class="app-logo">
+                            <img src="assets/images/play-store.png" alt="">
+                            <img src="assets/images/app-store.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="footer-col-3">
+                        <h3>About us</h3>
+                        <ul>
+                            <li>Fashion</li>
+                            <li>Jordan</li>
+                            <li>Essentials</li>
+                            <li>Trending</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><i class="ti-facebook"></i> Facebook</li>
+                            <li><i class="ti-twitter"></i> Twitter</li>
+                            <li><i class="ti-instagram"></i> Instagram</li>
+                            <li><i class="ti-youtube"></i> Youtube</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr>
+                <p class="copyright">Design By Us</p>
+
+            </div>
+        </div>
+
+
+        <!-----------------------------------js for toggle menu-------------------------------------->
+        <script>
+            var menuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "300px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+
+        <!-----------------------------------js for toggle form2-------------------------------------->
+        <script>
+            const toggleLinkRegister = document.getElementById('toggle-link');
+            const toggleLinkLogin = document.getElementById('toggle-link-login');
+            const registerForm = document.getElementById('register-form');
+            const loginForm = document.getElementById('login-form');
+            const loginFormContainer = document.querySelector('.login-form');
+
+            toggleLinkRegister.addEventListener('click', function (e) {
+                e.preventDefault();
+                registerForm.style.display = 'block';
+                loginFormContainer.style.display = 'none';
+            });
+
+            toggleLinkLogin.addEventListener('click', function (e) {
+                e.preventDefault();
+                registerForm.style.display = 'none';
+                loginFormContainer.style.display = 'block';
+            });
+
+            loginForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                // Xử lý đăng nhập
+                // ...
+            });
+
+            registerForm.addEventListener('submit', function (e) {
+                e.preventDefault();
+                // Xử lý đăng ký
+                // ...
+            });
+        </script>
+    </body>
+
+</html>

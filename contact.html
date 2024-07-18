@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+        <link rel="icon" type="image/png" href="assets/images/nike-32.ico">
+
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar navbar-padding">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/nike.png" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="account.html">Account</a></li>
+
+                        </ul>
+                    </nav>
+                    <a href="cart.html"><i class="ti-shopping-cart" style="font-size: 44px;"></i></a>
+                    <img src="assets/images/menu.png" class="menu-icon" onClick="menutoggle()">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!------------------------------ Contact------------------------------>
+
+        <div class="contact-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="assets/images/kisspng-sneakers-shoe-nike-air-max-air-jordan-nike-running-shoes-5a6ba6100fdd10.333881981517004304065.png"
+                            alt="">
+                    </div>
+
+                    <div class="col-2 container-form">
+                        <form action="#" method="POST">
+                            <h1>Contact Us</h1>
+                            <div class="form-group">
+                                <label for="name">Full Name:</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender:</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Select gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country:</label>
+                                <select id="country" name="country" required>
+                                    <option value="">Select country</option>
+                                    <option value="us">United States</option>
+                                    <option value="ca">Canada</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <!--Thêm các tùy chọn quốc gia khác-->
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="feedback">Feedback:</label>
+                                <textarea id="feedback" name="feedback" required placeholder="Enter your feedback"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit">Send it</button>
+                            </div>
+                        </form>
+                    </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+        <!----------------------------------Footer------------------------------------->
+        <div class="footer">
+            <div class="container">
+
+                <div class="row">
+                    <div class="footer-col-2">
+                        <img src="assets/images/logo-nike-white.png">
+                    </div>
+                    <div class="footer-col-1">
+                        <h3>Location</h3>
+                        <p><i class="ti-location-pin"></i> 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh,
+                            Việt Nam
+                        </p>
+                        <div class="app-logo">
+                            <img src="assets/images/play-store.png" alt="">
+                            <img src="assets/images/app-store.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="footer-col-3">
+                        <h3>About us</h3>
+                        <ul>
+                            <li>Fashion</li>
+                            <li>Jordan</li>
+                            <li>Essentials</li>
+                            <li>Trending</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><i class="ti-facebook"></i> Facebook</li>
+                            <li><i class="ti-twitter"></i> Twitter</li>
+                            <li><i class="ti-instagram"></i> Instagram</li>
+                            <li><i class="ti-youtube"></i> Youtube</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr>
+                <p class="copyright">Design By Us</p>
+
+            </div>
+        </div>
+
+
+        <!-----------------------------------js for toggle menu----------------------------------------------->
+        <script>
+            var menuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "300px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Cart</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+        <link rel="icon" type="image/png" href="assets/images/nike-32.ico">
+
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar navbar-padding">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/nike.png" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul id="MenuItems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="account.html">Account</a></li>
+
+                        </ul>
+                    </nav>
+                    <img src="assets/images/menu.png" class="menu-icon" onClick="menutoggle()">
+                </div>
+
+            </div>
+        </div>
+
+
+        <!------------------------------ cart items details------------------------------>
+
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="assets/images/5.webp">
+                            <div>
+                                <p>Tatum 1 'St. Louis'</p>
+                                <small>Price: $50.00</small><br>
+                                <a href=""><i class="ti-trash"></i></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" vlaue="1" class="input-quantity"></td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="assets/images/11.webp">
+                            <div>
+                                <p>Air Jordan 1 Mid</p>
+                                <small>Price: $52.00</small><br>
+                                <a href=""><i class="ti-trash"></i></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" vlaue="1" class="input-quantity"></td>
+                    <td>$52.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="assets/images/2.webp">
+                            <div>
+                                <p>Air Jordan 1 Low</p>
+                                <small>Price: $40.00</small><br>
+                                <a href=""><i class="ti-trash"></i></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" vlaue="1" class="input-quantity"></td>
+                    <td>$40.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="assets/images/1.webp">
+                            <div>
+                                <p>Air Jordan I High G</p>
+                                <small>Price: $50.00</small><br>
+                                <a href=""><i class="ti-trash"></i></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" vlaue="1" class="input-quantity"></td>
+                    <td>$50.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="assets/images/10.webp">
+                            <div>
+                                <p>Air Jordan 1 Mid SE</p>
+                                <small>Price: $50.00</small><br>
+                                <a href=""><i class="ti-trash"></i></a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" vlaue="1" class="input-quantity"></td>
+                    <td>$50.00</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$242.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$282.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+        <!----------------------------------footer------------------------------------->
+        <div class="footer">
+            <div class="container">
+
+                <div class="row">
+                    <div class="footer-col-2">
+                        <img src="assets/images/logo-nike-white.png">
+                    </div>
+                    <div class="footer-col-1">
+                        <h3>Location</h3>
+                        <p><i class="ti-location-pin"></i> 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Thành phố Hồ Chí Minh,
+                            Việt Nam
+                        </p>
+                        <div class="app-logo">
+                            <img src="assets/images/play-store.png" alt="">
+                            <img src="assets/images/app-store.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="footer-col-3">
+                        <h3>About us</h3>
+                        <ul>
+                            <li>Fashion</li>
+                            <li>Jordan</li>
+                            <li>Essentials</li>
+                            <li>Trending</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li><i class="ti-facebook"></i> Facebook</li>
+                            <li><i class="ti-twitter"></i> Twitter</li>
+                            <li><i class="ti-instagram"></i> Instagram</li>
+                            <li><i class="ti-youtube"></i> Youtube</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr>
+                <p class="copyright">Design By Us</p>
+
+            </div>
+        </div>
+
+
+        <!-----------------------------------js for toggle menu-------------------------------------->
+        <script>
+            var menuItems = document.getElementById("MenuItems");
+
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "300px";
+                }
+                else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+
+    </body>
+
+</html>
